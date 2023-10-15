@@ -1,1 +1,182 @@
-# Anujanless.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		/* Styling the Body element i.e. Color, 
+		Font, Alignment */ 
+		body {
+			background-color: #f87e04c2;
+			font-family: Verdana;
+			text-align: center;
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */ 
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input, 
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio 
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #c43505;
+			border: 1px solid #777;
+			border-radius: 8px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Diagnosis Survey Form</h1>
+	<h2>Triple A-J</h2>
+
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+				Name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="Phone-number" id="Phone-number">
+				Phone-number
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="Phone-number"
+				id="Phone-number"
+				placeholder="Enter your phone-number" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">Intern</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>All symptoms you are currently experiencing 
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">Excessive anger, hostility or violence</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">Confused thinking or reduced ability to concentrate</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">Excessive fears or worries, or extreme feelings of guilt
+				</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">Feeling sad or down</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">Increased sensitivity(sights, sounds, smells)</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">Inability to cope with daily problems or stress</input></label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Describe the differnt emotions and thoughts you felt today"
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				placeholder="Describe the emotion/thinking you feel right now">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit">
+			Submit Form
+		</button>
+	</form>
+</body>
+</html>

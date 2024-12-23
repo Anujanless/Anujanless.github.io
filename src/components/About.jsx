@@ -24,9 +24,9 @@ const Aboutme = () => {
                     {/* Text Content */}
                     <div className="text-lg">
                         <p className="text-lg mb-8">
-                            I am an enthusiastic, responsible, and hard-working person. 
-                            I am able to work well in both a team environment and independently. My goal is to apply my knowledge, skills, and creativity to innovate and make a positive impact on the world through AI and finance. 
-                            During my free time, I like to play the drums and do swimming.                         </p>
+                            I am a passionate and driven individual with a keen interest in finance and engerneering. As someone who thrives on learning and growth, I have been involved in various leadership roles, such as serving as co-president of a youth committee, vice president of a business and executive of various clubs in my school. My hands-on experience as part of the mechanical team in an FRC robotics team has honed my technical and problem-solving skills. Currently, I am actively seeking opportunities to expand my expertise, connect with like-minded professionals and explore different opportunities in the industry. My goal is to apply knowledge, skills, and creativity to innovate and make a positive impact on the world through AI and finance. 
+                            
+                            Outside of my professional pursuits, I am a person of diverse interests and passions. During my free time, I like to play the drums and do swimming. I have performed at my schools largest event Cafe Night and have attended various programs like SHAD and Waterloo Catalyst.                </p>
 
                     </div>
                 </div>

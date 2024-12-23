@@ -1,16 +1,20 @@
 {
+  "honepage": "http://Anujanless.github.io",
   "name": "app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.2.0",
     "motion": "^11.15.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.7",

@@ -9,7 +9,7 @@ const Aboutme = () => {
                 <div className="mb-8 flex justify-end">
                     <h2 
                         className='text-4xl font-bold mb-8 md:mb-12' 
-                        style={{ marginRight: '28%', marginBottom: '-10%' }} // Adjust the percentage as needed
+                        style={{ marginRight: '28%', marginBottom: '-2%' }} // Adjust the percentage as needed
                     >
                         About Me
                     </h2>

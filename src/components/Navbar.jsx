@@ -5,6 +5,7 @@ import Transition from "../components/transition"; // Import the Transition comp
 import logo from "../assets/Avatar1.png";
 import navIcon1 from "../assets/nav-icon1.svg";
 import navIcon2 from "../assets/nav-icon3.svg";
+import "../styles/Navbar.css"; // Import the CSS file for Navbar styles
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -42,16 +43,16 @@ const NavBar = () => {
       <AnimatePresence>{isTransitioning && <Transition />}</AnimatePresence>
 
       {/* Navbar */}
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? "scrolled navbar" : "navbar"}> 
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" className="navbar-brand-left"> 
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="ms-auto navbar-nav">
               <Nav.Link
                 href="#home"
                 className={activeLink === "home" ? "active navbar-link" : "navbar-link"}

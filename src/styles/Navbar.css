@@ -1,0 +1,15 @@
+.navbar-brand-left {
+  margin-right: auto; /* Shift the brand to the left */
+}
+
+@media (min-width: 1800px) {
+  .navbar {
+    justify-content: flex-start; /* Align the entire navbar to the left */
+  }
+  .navbar-nav {
+    margin-left: 60px; /* Adjust margin for the nav links */
+  }
+  .navbar-text {
+    margin-left: 60px; /* Adjust margin for the social icons and button */
+  }
+}
